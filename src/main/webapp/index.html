@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CoffeeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>CoffeeMaker</title>
+    <!--<link rel="stylesheet" href="material.min.css"/>-->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.brown-orange.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="material.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/directives.js"></script>
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" >
+    <header class="mdl-layout__header"style="background: url('assets/header.jpg') center / cover;">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Make a coffee</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <!--<a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>-->
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+            <!--<a class="mdl-navig&lt;!&ndash;ation__link" href="">Link</a>-->
+            <!--<a class="mdl-navigation__link" href="">Link</a>-->
+            <!--<a class="mdl-navigation__link" href="">Link</a>-->
+            <!--<a class="mdl-naviga&ndash;&gt;tion__link" href="">Link</a>-->
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content" id="mainContent">
+            <make-coffee></make-coffee>
+        </div>
+    </main>
+</div>
+</body>
+</html>

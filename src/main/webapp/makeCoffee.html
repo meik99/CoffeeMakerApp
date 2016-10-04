@@ -1,0 +1,44 @@
+<div ng-controller="CoffeeController as coffee">
+    <div class="mdl-grid">
+        <div class="mdl-cell
+                    mdl-cell--6-col-desktop
+                    mdl-cell--12-col-phone
+                    mdl-cell--12-col-tablet">
+            <div class="mdl-card" ng-click="coffee.makeSmall()">
+                <div class="mdl-card__title"
+                    style="
+                        width: 200px;
+                        height: 200px;
+                        background: url('assets/coffee_small.png') center / cover;
+                    ">
+                </div>
+                <div class="mdl-card__actions">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                            >
+                        Make a small coffee
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell
+                    mdl-cell--6-col-desktop
+                    mdl-cell--12-col-phone
+                    mdl-cell--12-col-tablet">
+            <div class="mdl-card" ng-click="coffee.makeLarge()">
+                <div class="mdl-card__title"
+                     style="
+                        width: 200px;
+                        height: 200px;
+                        background: url('assets/coffee_large.png') center / cover;
+                    ">
+                </div>
+                <div class="mdl-card__actions">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                            >
+                        Make a large coffee
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
